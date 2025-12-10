@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loki Clarke | Tools & Projects</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="starfield-canvas"></canvas>
+    <canvas id="cursor-canvas"></canvas>
+    <header>
+        <h1 class="glow-text" data-text="Loki Clarke's Projects">Loki Clarke's<br>Projects</h1>
+        <p>Select a project below.</p>
+    </header>
+
+    <div class="link-box">
+        <a class="card" href="https://chess.lokiclarke.com" target="_blank"><span class="glow-btn">Chess Tools</span></a>
+        <a class="card" href="https://stocks.lokiclarke.com" target="_blank"><span class="glow-btn">Stocks & Signals</span></a>
+    </div>
+
+    <footer>
+        © <span id="year"></span> Loki Clarke
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="starfield.js"></script>
+    <script src="cursor.js"></script>
+</body>
+</html>

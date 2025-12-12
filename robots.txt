@@ -1,0 +1,7 @@
+# robots.txt for lokiclarke
+# Allow all crawlers full access
+User-agent: *
+Disallow:
+
+# If you have a sitemap, uncomment and update the URL below
+# Sitemap: /sitemap.xml

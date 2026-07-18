@@ -134,6 +134,26 @@ p {
     box-shadow: 0 8px 30px rgba(122,92,255,0.08);
 }
 
+.card-disabled {
+    background-image: linear-gradient(#121216, #121216), linear-gradient(120deg, #777, #999, #5e5e66);
+    color: #9b9ba3;
+    opacity: 0.58;
+    pointer-events: none;
+    filter: grayscale(1);
+}
+
+.card-disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.analysis-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 260px;
+}
+
 /* Button text gradient + glow */
 .glow-btn {
     font-weight: 700;
@@ -147,6 +167,21 @@ p {
     text-shadow: 0 0 6px rgba(109,211,255,0.18), 0 0 12px rgba(255,105,180,0.10);
     display: inline-block;
     padding: 2px 6px;
+}
+
+.disabled-btn {
+    background: none;
+    -webkit-text-fill-color: #a0a0a8;
+    color: #a0a0a8;
+    animation: none;
+    text-shadow: none;
+}
+
+.card-note {
+    color: #8c8c95;
+    display: block;
+    font-size: 0.78rem;
+    line-height: 1.35;
 }
 
 /* subtle outer blur/glow for the outline to feel luminous */
